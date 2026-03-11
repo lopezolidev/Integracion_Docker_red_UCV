@@ -1,0 +1,39 @@
+name: ucv-infra
+
+topology:
+  nodes:
+    # Nodo Central - Data Center 
+    R0:
+      kind: linux
+      image: frrouting/frr:latest
+    
+    # Routers de Facultad 
+    R1-Rectorado:
+      kind: linux
+      image: frrouting/frr:latest
+    R2-Ciencias:
+      kind: linux
+      image: frrouting/frr:latest
+    R3-Medicina:
+      kind: linux
+      image: frrouting/frr:latest
+    R4-Ingenieria:
+      kind: linux
+      image: frrouting/frr:latest
+
+    # TU TEMA: El Host de Contenedores en la VLAN 21 (Ciencias) 
+    Servidor-Docker:
+      kind: linux
+      image: debian:12-slim
+      exec:
+        - apt update && apt install -y iproute2 iputils-ping
+
+  links:
+    # Conexiones al Data Center (Red de Tránsito 10.0.0.0/24) 
+    - endpoints: ["R0:eth1", "R1-Rectorado:eth1"]
+    - endpoints: ["R0:eth2", "R2-Ciencias:eth1"]
+    - endpoints: ["R0:eth3", "R3-Medicina:eth1"]
+    - endpoints: ["R0:eth4", "R4-Ingenieria:eth1"]
+    
+    # Conexión del Servidor de Contenedores a Ciencias 
+    - endpoints: ["R2-Ciencias:eth2", "Servidor-Docker:eth1"]
