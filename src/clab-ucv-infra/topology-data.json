@@ -1,0 +1,289 @@
+{
+  "name": "ucv-infra",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-b3326bce151e",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIL4V0SbfzYHOF5JjY0fmLWU7m3MP53gWrJrK87Y7S2gl"],
+  "nodes": {
+    "R0": {
+      "index": "0",
+      "shortname": "R0",
+      "longname": "clab-ucv-infra-R0",
+      "fqdn": "R0.ucv-infra.io",
+      "group": "",
+      "labdir": "/media/sjlo/_backup/General/Information/UCV/COMPUTACIÓN/information/6th_semester/REDES/expo/Integracion_Docker_red_UCV/src/clab-ucv-infra/R0",
+      "kind": "linux",
+      "image": "frrouting/frr:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.7",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::7",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-b3326bce151e",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/media/sjlo/_backup/General/Information/UCV/COMPUTACIÓN/information/6th_semester/REDES/expo/Integracion_Docker_red_UCV/src/clab-ucv-infra/R0",
+        "clab-node-longname": "clab-ucv-infra-R0",
+        "clab-node-name": "R0",
+        "clab-node-type": "",
+        "clab-owner": "sjlo",
+        "clab-topo-file": "/media/sjlo/_backup/General/Information/UCV/COMPUTACIÓN/information/6th_semester/REDES/expo/Integracion_Docker_red_UCV/src/ucv_lab.clab.yml",
+        "containerlab": "ucv-infra"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R1-Rectorado": {
+      "index": "1",
+      "shortname": "R1-Rectorado",
+      "longname": "clab-ucv-infra-R1-Rectorado",
+      "fqdn": "R1-Rectorado.ucv-infra.io",
+      "group": "",
+      "labdir": "/media/sjlo/_backup/General/Information/UCV/COMPUTACIÓN/information/6th_semester/REDES/expo/Integracion_Docker_red_UCV/src/clab-ucv-infra/R1-Rectorado",
+      "kind": "linux",
+      "image": "frrouting/frr:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.5",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::5",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-b3326bce151e",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/media/sjlo/_backup/General/Information/UCV/COMPUTACIÓN/information/6th_semester/REDES/expo/Integracion_Docker_red_UCV/src/clab-ucv-infra/R1-Rectorado",
+        "clab-node-longname": "clab-ucv-infra-R1-Rectorado",
+        "clab-node-name": "R1-Rectorado",
+        "clab-node-type": "",
+        "clab-owner": "sjlo",
+        "clab-topo-file": "/media/sjlo/_backup/General/Information/UCV/COMPUTACIÓN/information/6th_semester/REDES/expo/Integracion_Docker_red_UCV/src/ucv_lab.clab.yml",
+        "containerlab": "ucv-infra"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R2-Ciencias": {
+      "index": "2",
+      "shortname": "R2-Ciencias",
+      "longname": "clab-ucv-infra-R2-Ciencias",
+      "fqdn": "R2-Ciencias.ucv-infra.io",
+      "group": "",
+      "labdir": "/media/sjlo/_backup/General/Information/UCV/COMPUTACIÓN/information/6th_semester/REDES/expo/Integracion_Docker_red_UCV/src/clab-ucv-infra/R2-Ciencias",
+      "kind": "linux",
+      "image": "frrouting/frr:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.4",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::4",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-b3326bce151e",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/media/sjlo/_backup/General/Information/UCV/COMPUTACIÓN/information/6th_semester/REDES/expo/Integracion_Docker_red_UCV/src/clab-ucv-infra/R2-Ciencias",
+        "clab-node-longname": "clab-ucv-infra-R2-Ciencias",
+        "clab-node-name": "R2-Ciencias",
+        "clab-node-type": "",
+        "clab-owner": "sjlo",
+        "clab-topo-file": "/media/sjlo/_backup/General/Information/UCV/COMPUTACIÓN/information/6th_semester/REDES/expo/Integracion_Docker_red_UCV/src/ucv_lab.clab.yml",
+        "containerlab": "ucv-infra"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R3-Medicina": {
+      "index": "3",
+      "shortname": "R3-Medicina",
+      "longname": "clab-ucv-infra-R3-Medicina",
+      "fqdn": "R3-Medicina.ucv-infra.io",
+      "group": "",
+      "labdir": "/media/sjlo/_backup/General/Information/UCV/COMPUTACIÓN/information/6th_semester/REDES/expo/Integracion_Docker_red_UCV/src/clab-ucv-infra/R3-Medicina",
+      "kind": "linux",
+      "image": "frrouting/frr:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-b3326bce151e",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/media/sjlo/_backup/General/Information/UCV/COMPUTACIÓN/information/6th_semester/REDES/expo/Integracion_Docker_red_UCV/src/clab-ucv-infra/R3-Medicina",
+        "clab-node-longname": "clab-ucv-infra-R3-Medicina",
+        "clab-node-name": "R3-Medicina",
+        "clab-node-type": "",
+        "clab-owner": "sjlo",
+        "clab-topo-file": "/media/sjlo/_backup/General/Information/UCV/COMPUTACIÓN/information/6th_semester/REDES/expo/Integracion_Docker_red_UCV/src/ucv_lab.clab.yml",
+        "containerlab": "ucv-infra"
+      },
+      "port-bindings": [
+      ]
+    },
+    "R4-Ingenieria": {
+      "index": "4",
+      "shortname": "R4-Ingenieria",
+      "longname": "clab-ucv-infra-R4-Ingenieria",
+      "fqdn": "R4-Ingenieria.ucv-infra.io",
+      "group": "",
+      "labdir": "/media/sjlo/_backup/General/Information/UCV/COMPUTACIÓN/information/6th_semester/REDES/expo/Integracion_Docker_red_UCV/src/clab-ucv-infra/R4-Ingenieria",
+      "kind": "linux",
+      "image": "frrouting/frr:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.6",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::6",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-b3326bce151e",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/media/sjlo/_backup/General/Information/UCV/COMPUTACIÓN/information/6th_semester/REDES/expo/Integracion_Docker_red_UCV/src/clab-ucv-infra/R4-Ingenieria",
+        "clab-node-longname": "clab-ucv-infra-R4-Ingenieria",
+        "clab-node-name": "R4-Ingenieria",
+        "clab-node-type": "",
+        "clab-owner": "sjlo",
+        "clab-topo-file": "/media/sjlo/_backup/General/Information/UCV/COMPUTACIÓN/information/6th_semester/REDES/expo/Integracion_Docker_red_UCV/src/ucv_lab.clab.yml",
+        "containerlab": "ucv-infra"
+      },
+      "port-bindings": [
+      ]
+    },
+    "Servidor-Docker": {
+      "index": "5",
+      "shortname": "Servidor-Docker",
+      "longname": "clab-ucv-infra-Servidor-Docker",
+      "fqdn": "Servidor-Docker.ucv-infra.io",
+      "group": "",
+      "labdir": "/media/sjlo/_backup/General/Information/UCV/COMPUTACIÓN/information/6th_semester/REDES/expo/Integracion_Docker_red_UCV/src/clab-ucv-infra/Servidor-Docker",
+      "kind": "linux",
+      "image": "debian:12-slim",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.3",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::3",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-b3326bce151e",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/media/sjlo/_backup/General/Information/UCV/COMPUTACIÓN/information/6th_semester/REDES/expo/Integracion_Docker_red_UCV/src/clab-ucv-infra/Servidor-Docker",
+        "clab-node-longname": "clab-ucv-infra-Servidor-Docker",
+        "clab-node-name": "Servidor-Docker",
+        "clab-node-type": "",
+        "clab-owner": "sjlo",
+        "clab-topo-file": "/media/sjlo/_backup/General/Information/UCV/COMPUTACIÓN/information/6th_semester/REDES/expo/Integracion_Docker_red_UCV/src/ucv_lab.clab.yml",
+        "containerlab": "ucv-infra"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "R0",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:ec:bb:b1",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R1-Rectorado",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:b4:e8:42",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R0",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:be:f7:68",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R2-Ciencias",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:eb:2b:e5",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R0",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:58:84:d1",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R3-Medicina",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:c0:0a:b4",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R0",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:4f:c0:92",
+          "peer": "z"
+        },
+        "z": {
+          "node": "R4-Ingenieria",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:b1:07:13",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "R2-Ciencias",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:9c:8c:ad",
+          "peer": "z"
+        },
+        "z": {
+          "node": "Servidor-Docker",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:b6:60:14",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}

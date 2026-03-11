@@ -1,0 +1,31 @@
+---
+R0:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.7
+R1-Rectorado:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.5
+R2-Ciencias:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.4
+R3-Medicina:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.2
+R4-Ingenieria:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.6
+Servidor-Docker:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.3

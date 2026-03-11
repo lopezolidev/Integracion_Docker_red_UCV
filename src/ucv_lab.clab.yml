@@ -21,12 +21,14 @@ topology:
       kind: linux
       image: frrouting/frr:latest
 
-    # TU TEMA: El Host de Contenedores en la VLAN 21 (Ciencias) 
+    # El Host de Contenedores en la VLAN 21 (Ciencias) 
     Servidor-Docker:
       kind: linux
       image: debian:12-slim
+      binds:
+        - /var/run/docker.sock:/var/run/docker.sock
       exec:
-        - apt update && apt install -y iproute2 iputils-ping
+        - apt update && apt install -y iproute2 iputils-ping iptables docker.io
 
   links:
     # Conexiones al Data Center (Red de Tránsito 10.0.0.0/24) 
@@ -34,6 +36,5 @@ topology:
     - endpoints: ["R0:eth2", "R2-Ciencias:eth1"]
     - endpoints: ["R0:eth3", "R3-Medicina:eth1"]
     - endpoints: ["R0:eth4", "R4-Ingenieria:eth1"]
-    
     # Conexión del Servidor de Contenedores a Ciencias 
     - endpoints: ["R2-Ciencias:eth2", "Servidor-Docker:eth1"]
